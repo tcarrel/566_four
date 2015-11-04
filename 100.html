@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WebGL PONG! 2</title>
+</head>
+
+<body style="background-color:#00ff80"
+onload="main()" 
+onkeydown="return key_down(event)" 
+onkeyup="return key_up(event)">
+
+<font color="#ff0000">
+    <center>
+        <h1>WebGL<br>PONG!<br>2</h1>
+        <canvas
+            id="render_to"
+            width="640"
+            height="480"
+            style="border:1px solid #0000ff;">
+            Please use a browser that supports "canvas."
+        </canvas>
+        <font color="#ff8000">
+            <br><br>
+            Sounds are from <a target="_blank"
+                href="http://eng.universal-soundbank.com/pong.htm">
+                http://eng.universal-soundbank.com/pong.htm</a>
+
+            <script src="../lib/webgl-utils.js"></script>
+            <script src="../lib/webgl-debug.js"></script>
+            <script src="../lib/cuon-utils.js"></script>
+            <script src="../lib/cuon-matrix.js"></script>
+
+            <script src="./resource/text.js"></script>
+            <script src="./resource/bg.js"></script>
+            <script src="./resource/shaders/shaders.js"></script>
+            <script src="./resource/helpers/rgba.js"></script>
+
+            <script src="pong.js"></script>
+
+            <br><br>
+
+        </center>
+        </body>
+        </html>
